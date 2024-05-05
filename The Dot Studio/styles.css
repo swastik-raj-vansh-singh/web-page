@@ -38,8 +38,6 @@
     border-radius: 8px;
     position: relative;
     display: inline-block;
-    /* height: 300px;
-    width: 250px; */
     background-color: black;
     overflow: hidden;
     border-radius: 30px; 
@@ -53,28 +51,22 @@
 
 .card-body {
     height: 145px;
-    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-style: dashed; */
 }
 
 .card-title {
     font-size: 28px;
     font-weight: 600;
     position: absolute;
-    bottom: 30px;
+    bottom: 35px;
     line-height: 30.8px;
     font-family:Gotham;
     z-index: 1;
     border: #114A8D;
     
 }
-
-/* .card-title:hover{
-    display: none;
-} */
 
 .content{
     display: none;
@@ -95,30 +87,18 @@
     display: flex;
     justify-content:right; 
     align-items: center;
-    /* background-color: #114A8D;
-    color: white;  */
-    /* transition: transform 0.5s linear;
-    /* z-index: 1; */
-    /* transform-origin: 0px;
-    animation-name: slider;
-    animation-duration: 1s ; */ 
-    /* display: none; */
-
 
 }
 .moving:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin-left: 20px; */
     background-color: #114A8D;
-    /* transform: translate(0, 0); */
     transition: transform 0.5s linear;
     transform-origin: 0px;
     animation-name: slider;
     animation-duration: 1s ;
     z-index: 100;
-    /* opacity: 0.5; */
     .content{
         display: contents;
     }
@@ -128,6 +108,7 @@
     justify-content:right; 
     align-items: center;
     }
+
 }
 
 .text{
@@ -139,8 +120,6 @@
 }
 @keyframes slider{
     0%{bottom:15px;left:0px;top:60%;height:20%;width: 20%;}
-    /* 25%{bottom:15px;left:0px;top:40%;height: 40%;width: 40%;}
-    50%{bottom:15px;left:0px;top:20%;height: 60%;width: 60%;} */
     100%{bottom:15px;left:0px;top:10%;height: 80%;width: 100%;
     }
     
